@@ -1,0 +1,13 @@
+{
+  "name": "bulyilmaz-grid-system",
+  "version": "1.0.0",
+  "description": "Grid System with SASS",
+  "main": "index.html",
+  "keywords": ["Grid System", "SASS"],
+  "author": "Bülent YILMAZ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bulyilmaz/bulyilmaz-grid-system"
+  }
+}

@@ -1,0 +1,27 @@
+.row > div {
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+$mapForResolution: (
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
+);
+
+$numberOfColumns: 12;
+
+@each $key, $value in $mapForResolution {
+  @media all and (min-width: $value + px) {
+    @for $i from 1 through $numberOfColumns {
+      .row .col-#{$key}-#{$i} {
+        width: (100% / $numberOfColumns) * $i;
+      }
+    }
+  }
+}
